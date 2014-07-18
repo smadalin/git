@@ -7,5 +7,5 @@ button.onclick = function(){
 	var x = 5;
 	var y = 10;
 	var result = summ(x, y);
-	console.log(result);
+	console.log('the result is ' + result);
 }
