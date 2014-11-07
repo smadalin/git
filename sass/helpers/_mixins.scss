@@ -1,0 +1,124 @@
+// ------------------------------------------------------
+// ------------------------------------------------------
+//              Mixins
+// ------------------------------------------------------
+// ------------------------------------------------------
+
+// --------------------------------
+// Fetch simple map // for nested maps see map-fetch
+// --------------------------------
+@mixin get-props($map) {
+  @each $property, $value in $map {
+    #{$property}: $value;
+  }
+}
+
+// --------------------------------
+// Style buttons with spans and anchors
+// usage: 
+//  1. @include button-style(span) -- for button span
+//  2. @include button-style()     -- for anchors
+// --------------------------------
+@mixin button-style($element: null){  
+  @extend %typography;                // basic tpograpgy
+  @if $element {                      // check if it's a button
+    @extend %button-ext;              // add margin, border, shadow
+    &:hover {                         // hover style for button
+      @extend %hover-button-ext;      // hover style ext: margin, border
+      #{$element} {
+        @extend %hover-button-int;    // hover style int: color, etc
+      }
+    }
+    #{$element} {                     // style the HTML tag passed(span)
+      @extend %button-int;            // normal style int: color, etc
+    }
+  }
+  @else {                             // style anchor
+    @extend %button-ext;              
+    @extend %button-int;
+    &:hover {                         // style anchor on hover
+      @extend %hover-button-ext;
+      @extend %hover-button-int;
+    }
+  }
+}
+
+// --------------------------------
+// Crossbrowser opacity
+// --------------------------------
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// --------------------------------
+// Clearfix mixin
+// --------------------------------
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// --------------------------------
+// Border radius
+// --------------------------------
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  // IE9 and above
+}
+
+// --------------------------------
+// Text truncate, requires display inline-block or block
+// usage 
+//  1. @include text-trancate(block)
+//  2. @include text-trancate(inline-block)
+// --------------------------------
+@mixin text-truncate($display) {
+  display: $display;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// ------------------------------------------------------
+// ------------------------------------------------------
+// Placeholders
+// ------------------------------------------------------
+// ------------------------------------------------------
+
+// --------------------------------
+// Clearfix placeholder
+// --------------------------------
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// --------------------------------
+// Better option for display:none
+// --------------------------------
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
