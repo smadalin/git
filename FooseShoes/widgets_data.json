@@ -1,0 +1,67 @@
+{
+    "messages": [
+            {
+                "user": "@ericafustero ",
+                "message": "Why thank you. Your work looks awesome by the way! @treemelody",
+                "date":"19 days ago"
+            },
+            {
+                "user": "@flackshortbread",
+                "message": "Dolor sit amet, consectetur adipiscing elit. Sed neque nunc, gravida.",
+                "date":"20 days ago"
+            },
+            {
+                "user": "@austrinaslimeball ",
+                "message": "Dolor sit amet, consectetur adipiscing elit. Maecenas nec dignissim ex.",
+                "date":"30 days ago"
+            },
+            {
+                "user": "@roymarvelous",
+                "message": "You can seek a refund through TF if it is not as advertised - but it is :)",
+                "date":"15 days ago"
+            },
+            {
+                "user": "@twitchoperator",
+                "message": "Dolor sit amet, consectetur adipiscing elit. Suspendisse augue enim, lacinia.",
+                "date":"7 days ago"
+            },
+            {
+                "user": "@millerscoff",
+                "message": "Dolor sit amet, consectetur adipiscing elit. Cras scelerisque posuere ipsum.",
+                "date":"65 days ago"
+            }
+        ],
+        
+         "blogPosts":[
+            {
+            "postDate": "APR  01",
+            "postTitle": "Nice & clean. The best for you blog!",
+            "postMessage": "Vivamus metus turpis, bibendum vitae euismod."
+            },
+            {
+                "postDate": "JAN 3",
+                "postTitle": "Nam aliquam vulputate turpis, bibendum.",
+                "postMessage": "In eros sapien, laoreet sit amet nulla in, condimentum."
+            },
+            {
+                "postDate": "MAR  14",
+                "postTitle": "Nam aliquam vulputate turpis, bibendum. ",
+                "postMessage": "Proin non dui eleifend, dapibus sem vel, tincidunt."
+            },
+            {
+                "postDate": "APR  05",
+                "postTitle": "Integer faucibus enim vitae lorem.",
+                "postMessage": "Sed vitae dolor dignissim, sodales risus iaculis, fringilla ."
+            },
+            {
+                "postDate": "JUN  13",
+                "postTitle": "Curabitur varius eros at sollicitudin.",
+                "postMessage": "Fusce sed aliquet lorem. Nullam luctus purus eu neque."
+            },
+            {
+                "postDate": "APR  22",
+                "postTitle": "Integer rutrum libero et elit.",
+                "postMessage": "Vestibulum posuere odio sit amet viverra vulputate. "
+            }
+    ]
+}
