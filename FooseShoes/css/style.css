@@ -1,0 +1,567 @@
+/*mixin that let you change placeholder font color.*/
+/*----------------end placeholder mixin---------*/
+/*CSS for autocomplete drop-down*/
+.ui-corner-all {
+  border-radius: 0px !important;
+  border: none !important;
+  padding: 0px 0px 0px 0px !important; }
+
+.ui-menu .ui-menu-item a {
+  background: #4c4c4c;
+  height: 40px;
+  font-size: 12px;
+  border: none;
+  color: #6b6b6b;
+  text-indent: 15px;
+  line-height: 40px !important;
+  border-bottom: 1px solid #6b6b6b !important;
+  margin: 0px !important;
+  cursor: pointer; }
+
+.ui-menu .ui-menu-item a:hover {
+  background-color: #242424; }
+
+/*CSS for Header------Logo,Login and Register Tab-----------------*/
+.header {
+  background-color: #242424;
+  width: 100%; }
+  .header .content {
+    width: 960px;
+    margin: auto; }
+    .header .content .logo {
+      float: left;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: #57c5a0;
+      height: 50px;
+      line-height: 50px;
+      font-family: 'Open Sans'; }
+    .header .content input {
+      float: right;
+      width: 170px;
+      height: 50px;
+      background-color: #242424;
+      color: #6b6b6b;
+      outline: none;
+      border: none;
+      text-indent: 22px;
+      border-left: 1px solid #383838; }
+      .header .content input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #6b6b6b; }
+      .header .content input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #6b6b6b; }
+      .header .content input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #6b6b6b; }
+      .header .content input:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #6b6b6b; }
+    .header .content .fa-search {
+      color: #6b6b6b;
+      float: right;
+      margin-right: -150px;
+      margin-top: 20px; }
+    .header .content .login {
+      float: right;
+      color: #6b6b6b;
+      top: 0px;
+      right: 0px;
+      font-size: 12px;
+      padding: 0px 22px 0px 22px;
+      border-left: 1px solid #383838;
+      border-right: 1px solid #383838;
+      line-height: 50px;
+      margin: 0; }
+
+/*CSS for NavMenu,Whishlist and Cart------------------*/
+.nav-menu {
+  background-color: #FFF;
+  width: 100%; }
+  .nav-menu .content {
+    width: 960px;
+    margin: auto;
+    height: 60px;
+    line-height: 60px; }
+    .nav-menu .content ul {
+      float: left;
+      list-style-type: none;
+      padding-left: 0px; }
+      .nav-menu .content ul li {
+        display: inline-block;
+        border-left: 1px solid #EEEEEE; }
+      .nav-menu .content ul li:last-child {
+        border-right: 1px solid #EEEEEE; }
+      .nav-menu .content ul a {
+        color: #000;
+        font-family: 'Allerta';
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px; }
+      .nav-menu .content ul a:hover {
+        text-decoration: none; }
+    .nav-menu .content .cart {
+      float: right;
+      width: 105px;
+      height: 60px;
+      border-left: 1px solid #EEEEEE;
+      border-right: 1px solid #EEEEEE; }
+      .nav-menu .content .cart:hover span {
+        background-color: #57c5a0; }
+      .nav-menu .content .cart a {
+        padding-left: 20px; }
+      .nav-menu .content .cart .fa {
+        margin-left: 25px;
+        color: #000; }
+      .nav-menu .content .cart span {
+        background-color: #adadad;
+        color: #FFF;
+        margin-left: 10px;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        margin: 16px 25px 0px 0px; }
+    .nav-menu .content .whishlist {
+      float: right;
+      width: 105px;
+      height: 60px;
+      border-left: 1px solid #EEEEEE; }
+      .nav-menu .content .whishlist:hover span {
+        background-color: #57c5a0; }
+      .nav-menu .content .whishlist a {
+        padding-left: 25px; }
+      .nav-menu .content .whishlist .fa {
+        margin-left: 25px;
+        color: #000; }
+      .nav-menu .content .whishlist span {
+        background-color: #adadad;
+        color: #FFF;
+        margin-left: 10px;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: right;
+        margin: 16px 25px 0px 0px; }
+
+/*CSS for Cover-----------------------*/
+.cover {
+  width: 100%;
+  background: url("../img/coverbg.jpg"); }
+  .cover .content {
+    height: 460px;
+    width: 1100px;
+    margin: auto;
+    background: url("../img/coverimg.jpg") no-repeat; }
+    .cover .content .cover-details {
+      width: 445px;
+      height: 460px;
+      margin-left: 585px; }
+      .cover .content .cover-details .price {
+        width: 70px;
+        height: 70px;
+        background-color: #57c5a0;
+        font-family: 'Open Sans';
+        line-height: 70px;
+        text-align: center;
+        color: #FFF;
+        float: left;
+        margin-top: 80px; }
+
+/*CSS for Seconday Navigation Menu-----------------*/
+.sec-nav {
+  width: 100%; }
+  .sec-nav .content {
+    height: 90px;
+    background-color: #2e2e2e; }
+
+/*CSS for Special Products Section------------------------*/
+.special-products {
+  width: 100%;
+  background-color: #242424; }
+  .special-products .content {
+    width: 960px;
+    margin: auto; }
+    .special-products .content .onsale {
+      width: 300px;
+      height: 180px;
+      background: url("../img/onsale.jpg");
+      float: left;
+      margin-top: 25px;
+      margin-bottom: 25px; }
+    .special-products .content .specialoffers {
+      width: 300px;
+      height: 180px;
+      background: url("../img/specialoffers.jpg");
+      float: left;
+      margin: 25px 0px 0px 30px; }
+    .special-products .content .musthave {
+      width: 300px;
+      height: 180px;
+      background: url("../img/musthave.jpg");
+      float: left;
+      margin: 25px 0px 0px 30px; }
+    .special-products .content .special-products-label {
+      width: 180px;
+      height: 60px;
+      background-color: rgba(0, 0, 0, 0.85);
+      margin: auto;
+      margin-top: 60px;
+      color: #FFF;
+      font-family: 'Open Sans';
+      text-align: center;
+      line-height: 60px;
+      font-size: 20px; }
+  .special-products a:hover {
+    text-decoration: none; }
+
+/*CSS for Special Products List Section------------------------*/
+.products-list {
+  background-color: #ebe7df;
+  width: 100%; }
+  .products-list .content {
+    width: 960px;
+    margin: auto; }
+    .products-list .content hr {
+      background-color: #bcb5a7;
+      color: #bcb5a7;
+      border: 0 none;
+      height: 1px;
+      margin-top: 45px;
+      margin-bottom: 25px; }
+    .products-list .content h1 {
+      font-family: 'Allerta';
+      font-size: 22px;
+      float: left;
+      margin-top: 25px; }
+    .products-list .content .show-all {
+      width: 100px;
+      height: 30px;
+      border: 1px solid #bcb5a7;
+      float: right;
+      line-height: 30px;
+      text-align: center;
+      color: #bcb5a7;
+      margin-top: 25px;
+      font-family: 'Allerta'; }
+      .products-list .content .show-all:hover {
+        color: black;
+        background-color: #B2AFAB; }
+    .products-list .content .new-arrivals {
+      width: 960px;
+      margin-top: 80px; }
+      .products-list .content .new-arrivals .product {
+        height: 270px;
+        width: 300px;
+        float: left;
+        background-color: #FFF;
+        margin-right: 30px; }
+        .products-list .content .new-arrivals .product:hover .action-menu {
+          display: block; }
+        .products-list .content .new-arrivals .product:hover h4 {
+          display: none; }
+        .products-list .content .new-arrivals .product:nth-child(3n) {
+          margin-right: 0px; }
+        .products-list .content .new-arrivals .product img {
+          border-bottom: 1px solid #CCC; }
+        .products-list .content .new-arrivals .product .price {
+          width: 68px;
+          height: 68px;
+          line-height: 68px;
+          color: #FFF;
+          background-color: #57c5a0;
+          margin-left: 10px;
+          text-align: center;
+          font-family: 'Open Sans';
+          margin-top: -19px;
+          float: left;
+          position: absolute; }
+        .products-list .content .new-arrivals .product h4 {
+          margin-left: 100px;
+          line-height: 30px;
+          color: #000;
+          float: left;
+          display: block; }
+        .products-list .content .new-arrivals .product .on-sale {
+          height: 68px;
+          width: 68px;
+          line-height: 68px;
+          color: #FFF;
+          background-color: #000;
+          font-family: 'Open Sans';
+          text-align: center;
+          float: right;
+          position: absolute;
+          margin-top: -221px;
+          margin-left: 222px; }
+        .products-list .content .new-arrivals .product .action-menu {
+          width: 220px;
+          height: 50px;
+          float: right;
+          display: none; }
+          .products-list .content .new-arrivals .product .action-menu .fa {
+            color: #000;
+            margin-left: 25px;
+            line-height: 50px; }
+            .products-list .content .new-arrivals .product .action-menu .fa:hover {
+              color: #57c5a0; }
+    .products-list .content .best-sellers {
+      width: 960px;
+      margin-top: 80px; }
+      .products-list .content .best-sellers .product {
+        height: 270px;
+        width: 300px;
+        float: left;
+        background-color: #FFF;
+        margin-right: 30px; }
+        .products-list .content .best-sellers .product:hover .action-menu {
+          display: block; }
+        .products-list .content .best-sellers .product:hover h4 {
+          display: none; }
+        .products-list .content .best-sellers .product:nth-child(3n) {
+          margin-right: 0px; }
+        .products-list .content .best-sellers .product img {
+          border-bottom: 1px solid #CCC; }
+        .products-list .content .best-sellers .product .price {
+          width: 68px;
+          height: 68px;
+          line-height: 68px;
+          color: #FFF;
+          background-color: #57c5a0;
+          margin-left: 10px;
+          text-align: center;
+          font-family: 'Open Sans';
+          margin-top: -19px;
+          float: left;
+          position: absolute; }
+        .products-list .content .best-sellers .product h4 {
+          margin-left: 100px;
+          line-height: 30px;
+          color: #000;
+          float: left;
+          display: block; }
+        .products-list .content .best-sellers .product .out-of-stock {
+          height: 68px;
+          width: 68px;
+          line-height: 34px;
+          color: #FFF;
+          background-color: #f27e4b;
+          font-family: 'Open Sans';
+          text-align: center;
+          float: right;
+          position: absolute;
+          margin-top: -221px;
+          margin-left: 222px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 20px; }
+        .products-list .content .best-sellers .product .action-menu {
+          width: 220px;
+          height: 50px;
+          float: right;
+          display: none; }
+          .products-list .content .best-sellers .product .action-menu .fa {
+            color: #000;
+            margin-left: 25px;
+            line-height: 50px; }
+            .products-list .content .best-sellers .product .action-menu .fa:hover {
+              color: #57c5a0; }
+    .products-list .content .pre-footer {
+      width: 960px;
+      margin-bottom: 25px; }
+      .products-list .content .pre-footer .free-shipping {
+        width: 220px;
+        height: 185px;
+        background-color: #dfdbd4;
+        float: left;
+        font-family: 'Allerta';
+        font-size: 12px;
+        padding: 10px 20px 10px 20px; }
+      .products-list .content .pre-footer .testimonials {
+        width: 220px;
+        margin-left: 30px;
+        height: 185px;
+        background-color: #dfdbd4;
+        float: left;
+        font-family: 'Allerta';
+        font-size: 12px;
+        padding: 10px 20px 10px 20px; }
+      .products-list .content .pre-footer .blog {
+        width: 460px;
+        height: 185px;
+        margin-left: 30px;
+        background-color: #dfdbd4;
+        float: left;
+        font-family: 'Allerta';
+        font-size: 12px;
+        padding: 10px 20px 10px 20px; }
+        .products-list .content .pre-footer .blog .post-details {
+          cursor: pointer; }
+          .products-list .content .pre-footer .blog .post-details #postDate1, .products-list .content .pre-footer .blog .post-details #postDate2 {
+            height: 40px;
+            width: 40px;
+            background-color: #57c5a0;
+            text-align: center;
+            font-family: 'Allerta';
+            margin-top: 15px;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+          .products-list .content .pre-footer .blog .post-details #postTitle1, .products-list .content .pre-footer .blog .post-details #postTitle2 {
+            font-weight: bold;
+            float: left;
+            margin: 15px 0px 0px 10px; }
+          .products-list .content .pre-footer .blog .post-details #postMessage1, .products-list .content .pre-footer .blog .post-details #postMessage2 {
+            margin-left: 10px;
+            float: left; }
+        .products-list .content .pre-footer .blog p {
+          margin-top: 20px;
+          font-size: 10px;
+          margin-left: 55px;
+          color: #000; }
+
+/*CSS for footer-----------------------------*/
+.footer {
+  width: 100%;
+  height: 365px;
+  background-color: #242424; }
+  .footer .content {
+    width: 960px;
+    height: 245px;
+    margin: auto; }
+    .footer .content .text-widget {
+      width: 300px;
+      height: 245px;
+      float: left;
+      margin-right: 30px;
+      color: #9b9b9b;
+      font-family: 'Allerta';
+      cursor: pointer; }
+      .footer .content .text-widget h5 {
+        margin: 50px 0px 0px 40px; }
+      .footer .content .text-widget p {
+        margin: 23px 0px 0px 40px;
+        font-size: 12px; }
+    .footer .content .twitter-widget {
+      width: 300px;
+      height: 245px;
+      float: left;
+      color: #9b9b9b;
+      font-family: 'Allerta';
+      margin-right: 30px;
+      line-height: 15px; }
+      .footer .content .twitter-widget h5 {
+        margin: 50px 0px 0px 0px; }
+      .footer .content .twitter-widget .message-box {
+        font-size: 12px;
+        margin-top: 23px;
+        cursor: pointer; }
+      .footer .content .twitter-widget #twitterUser1, .footer .content .twitter-widget #twitterUser2 {
+        color: #57c5a0; }
+    .footer .content .flickr-widget {
+      width: 300px;
+      height: 245px;
+      float: left;
+      color: #9b9b9b;
+      font-family: 'Allerta'; }
+      .footer .content .flickr-widget h5 {
+        margin: 50px 0px 0px 0px; }
+      .footer .content .flickr-widget img {
+        margin: 18px 14px 0px 0px;
+        width: 75px;
+        height: 55px; }
+  .footer hr {
+    background-color: #1c1c1c;
+    color: #1c1c1c;
+    border: 0 none;
+    height: 1px;
+    margin: 10px 0px 0px 0px; }
+  .footer .social-media {
+    width: 960px;
+    margin: auto;
+    height: 108px; }
+    .footer .social-media .newsletter {
+      height: 36px;
+      width: 245px;
+      margin: 36px 0px 0px 40px;
+      float: left; }
+      .footer .social-media .newsletter input {
+        width: 209px;
+        height: 36px;
+        background-color: #2e2e2e;
+        text-indent: 15px;
+        font-size: 12px;
+        color: #7d7d7d;
+        border: none;
+        font-family: 'Allerta';
+        outline: none;
+        float: left; }
+        .footer .social-media .newsletter input::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: #727272; }
+        .footer .social-media .newsletter input:-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #727272; }
+        .footer .social-media .newsletter input::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #727272; }
+        .footer .social-media .newsletter input:-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: #727272; }
+      .footer .social-media .newsletter button {
+        float: right;
+        width: 36px;
+        height: 36px;
+        background-color: #7d7d7d;
+        border: none;
+        color: #242424; }
+    .footer .social-media .social-buttons {
+      margin-top: 36px;
+      float: right; }
+      .footer .social-media .social-buttons .social-logo {
+        width: 36px;
+        height: 36px;
+        background-color: #2e2e2e;
+        float: left;
+        margin-right: 10px; }
+        .footer .social-media .social-buttons .social-logo:hover {
+          background-color: #1A1919; }
+
+/*CSS for after-footer-----------------------------*/
+.after-footer {
+  width: 100%;
+  background-color: #2e2e2e; }
+  .after-footer .content {
+    width: 960px;
+    margin: auto;
+    font-family: 'Allerta'; }
+    .after-footer .content p {
+      color: #7d7d7d;
+      font-size: 12px;
+      float: left;
+      line-height: 22px;
+      margin: 25px 0px 25px 0px; }
+    .after-footer .content ul {
+      float: right; }
+    .after-footer .content li {
+      display: inline-block;
+      margin-top: 30px; }
+    .after-footer .content a {
+      color: #7d7d7d; }
+      .after-footer .content a:hover {
+        text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+{
+    "blogPosts":[
+            {
+            "postDate": "APR  01",
+            "postTitle": "Nice & clean. The best for you blog!",
+            "postMessage": "Vivamus metus turpis, bibendum vitae euismod."
+            },
+            {
+                "postDate": "JAN 3",
+                "postTitle": "Nam aliquam vulputate turpis, bibendum.",
+                "postMessage": "In eros sapien, laoreet sit amet nulla in, condimentum."
+            },
+            {
+                "postDate": "MAR  14",
+                "postTitle": "Nam aliquam vulputate turpis, bibendum. ",
+                "postMessage": "Proin non dui eleifend, dapibus sem vel, tincidunt."
+            },
+            {
+                "postDate": "APR  05",
+                "postTitle": "Integer faucibus enim vitae lorem.",
+                "postMessage": "Sed vitae dolor dignissim, sodales risus iaculis, fringilla ."
+            },
+            {
+                "postDate": "JUN  13",
+                "postTitle": "Curabitur varius eros at sollicitudin.",
+                "postMessage": "Fusce sed aliquet lorem. Nullam luctus purus eu neque."
+            },
+            {
+                "postDate": "APR  22",
+                "postTitle": "Integer rutrum libero et elit.",
+                "postMessage": "Vestibulum posuere odio sit amet viverra vulputate. "
+            }
+    ]
+}
