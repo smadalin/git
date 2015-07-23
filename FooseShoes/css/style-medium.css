@@ -69,7 +69,7 @@
       top: 0px;
       right: 0px;
       font-size: 12px;
-      padding: 0px 22px 0px 22px;
+      padding: 0px 18px 0px 18px;
       border-left: 1px solid #383838;
       border-right: 1px solid #383838;
       line-height: 45px;
@@ -93,7 +93,7 @@
         display: inline-block;
         border-left: 1px solid #EEEEEE; }
       .nav-menu .content ul li:last-child {
-        border-right: 1px solid #EEEEEE; }
+        border-right: none; }
       .nav-menu .content ul a {
         color: #000;
         font-family: 'Allerta';
@@ -102,7 +102,7 @@
       .nav-menu .content ul a:hover {
         text-decoration: none; }
     .nav-menu .content .cart {
-      float: left;
+      float: right;
       width: 84px;
       height: 60px;
       border-left: 1px solid #EEEEEE;
@@ -127,13 +127,12 @@
         justify-content: center;
         align-items: center;
         float: right;
-        margin: 22px 16px 0px 0px; }
+        margin: 22px 16px 0px 0px;
+        font-size: 12px; }
     .nav-menu .content .whishlist {
       float: left;
       width: 92px;
-      height: 60px;
-      border-left: 1px solid #EEEEEE;
-      border-right: 1px solid #EEEEEE; }
+      height: 60px; }
       .nav-menu .content .whishlist:hover span {
         background-color: #57c5a0; }
       .nav-menu .content .whishlist a {
@@ -589,5 +588,8 @@
       color: #7d7d7d; }
       .after-footer .content a:hover {
         text-decoration: none; }
+
+html.touch *:hover {
+  pointer-events: none !important; }
 
 /*# sourceMappingURL=style-medium.css.map */
