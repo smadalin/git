@@ -31,9 +31,7 @@
     .header .content .logo {
       float: left;
       margin-top: 0px;
-      margin-bottom: 0px;
       color: #57c5a0;
-      height: 45px;
       line-height: 45px;
       font-family: 'Open Sans'; }
     .header .content input {
@@ -73,7 +71,7 @@
       border-left: 1px solid #383838;
       border-right: 1px solid #383838;
       line-height: 45px;
-      margin: 0; }
+      margin: 0px; }
 
 /*CSS for NavMenu,Whishlist and Cart------------------*/
 .nav-menu {
@@ -301,13 +299,14 @@
       .products-list .content .new-arrivals .product {
         height: 265px;
         width: 220px;
+        position: relative;
         float: left;
         background-color: #FFF;
         margin: 0px 20px 0px 0px; }
         .products-list .content .new-arrivals .product:hover .action-menu {
-          display: block; }
-        .products-list .content .new-arrivals .product:hover h4 {
           display: none; }
+        .products-list .content .new-arrivals .product:hover h4 {
+          display: block; }
         .products-list .content .new-arrivals .product:first-child {
           margin-left: 10px; }
         .products-list .content .new-arrivals .product:nth-child(3n) {
@@ -344,32 +343,24 @@
           text-align: center;
           float: right;
           position: absolute;
-          margin-top: -220px;
-          margin-left: 142px; }
+          top: 0px;
+          right: 10px; }
         .products-list .content .new-arrivals .product .action-menu {
-          width: 140px;
-          height: 50px;
-          float: right;
           display: none; }
-          .products-list .content .new-arrivals .product .action-menu .fa {
-            color: #6e6e6e;
-            margin-left: 10px;
-            line-height: 50px; }
-            .products-list .content .new-arrivals .product .action-menu .fa:hover {
-              color: #57c5a0; }
     .products-list .content .best-sellers {
       width: 720px;
       margin-top: 80px; }
       .products-list .content .best-sellers .product {
         height: 265px;
         width: 220px;
+        position: relative;
         float: left;
         background-color: #FFF;
         margin-right: 20px; }
         .products-list .content .best-sellers .product:hover .action-menu {
-          display: block; }
-        .products-list .content .best-sellers .product:hover h4 {
           display: none; }
+        .products-list .content .best-sellers .product:hover h4 {
+          display: block; }
         .products-list .content .best-sellers .product:first-child {
           margin-left: 10px; }
         .products-list .content .best-sellers .product:nth-child(3n) {
@@ -406,23 +397,14 @@
           text-align: center;
           float: right;
           position: absolute;
-          margin-top: -221px;
-          margin-left: 142px;
+          top: 0px;
+          right: 10px;
           display: flex;
           justify-content: center;
           align-items: center;
           line-height: 20px; }
         .products-list .content .best-sellers .product .action-menu {
-          width: 140px;
-          height: 50px;
-          float: right;
           display: none; }
-          .products-list .content .best-sellers .product .action-menu .fa {
-            color: #6e6e6e;
-            margin-left: 10px;
-            line-height: 50px; }
-            .products-list .content .best-sellers .product .action-menu .fa:hover {
-              color: #57c5a0; }
     .products-list .content .pre-footer {
       width: 720px;
       margin-bottom: 25px; }
@@ -588,8 +570,5 @@
       color: #7d7d7d; }
       .after-footer .content a:hover {
         text-decoration: none; }
-
-html.touch *:hover {
-  pointer-events: none !important; }
 
 /*# sourceMappingURL=style-medium.css.map */

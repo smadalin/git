@@ -45,9 +45,7 @@ padding: 0px 0px 0px 0px !important;
         .logo {
             float: left;
             margin-top: 0px;
-            margin-bottom: 0px;
             color: #57c5a0;
-            height: 45px;
             line-height: 45px;
             font-family: 'Open Sans';
         }
@@ -79,7 +77,7 @@ padding: 0px 0px 0px 0px !important;
             border-left: 1px solid #383838;
             border-right: 1px solid #383838;
             line-height: 45px;
-            margin: 0;
+            margin: 0px;
         }
     }
 }
@@ -350,14 +348,15 @@ padding: 0px 0px 0px 0px !important;
             .product {
             height: 265px;
             width: 220px;
+            position: relative;
             float: left;
             background-color: #FFF;
             margin: 0px 20px 0px 0px;
             &:hover .action-menu{
-            display: block;
+            display: none;
             }
             &:hover h4{
-                display: none;
+                display: block;
             }
             &:first-child {
                 margin-left: 10px;
@@ -400,22 +399,11 @@ padding: 0px 0px 0px 0px !important;
                 text-align: center;
                 float: right;
                 position: absolute;
-                margin-top: -220px;
-                margin-left: 142px;
+                top: 0px;
+                right: 10px;
              }
              .action-menu {
-                width: 140px;
-                height: 50px;
-                float: right;
                 display: none;
-               .fa {
-                color: #6e6e6e;
-                margin-left: 10px;
-                line-height: 50px;
-                &:hover {
-                color: #57c5a0;
-               }
-               }
              }
             }
         } 
@@ -425,14 +413,15 @@ padding: 0px 0px 0px 0px !important;
             .product {
             height: 265px;
             width: 220px;
+            position: relative;
             float: left;
             background-color: #FFF;
             margin-right: 20px;
             &:hover .action-menu{
-            display: block;
+            display: none;
             }
             &:hover h4{
-                display: none;
+                display: block;
             }
             &:first-child {
                 margin-left: 10px;
@@ -475,26 +464,15 @@ padding: 0px 0px 0px 0px !important;
                 text-align: center;
                 float: right;
                 position: absolute;
-                margin-top: -221px;
-                margin-left: 142px;
+                top: 0px;
+                right: 10px;
                 display:flex;
                 justify-content:center;
                 align-items:center;
                 line-height: 20px;
              }
              .action-menu {
-                width: 140px;
-                height: 50px;
-                float: right;
                 display: none;
-               .fa {
-                color: #6e6e6e;
-                margin-left: 10px;
-                line-height: 50px;
-                &:hover {
-                color: #57c5a0;
-               }
-               }
              }
             }
         } 
@@ -684,7 +662,4 @@ padding: 0px 0px 0px 0px !important;
             }
         }
     }
-}
-html.touch *:hover {
-    pointer-events: none !important;
 }
