@@ -477,7 +477,6 @@ padding: 0px 0px 0px 0px !important;
         .twitter-widget {
             width: 100%;
             height: 245px;
-            float: left;
             color: #9b9b9b;
             font-family: 'Allerta';
             margin-right: 30px;
@@ -495,8 +494,19 @@ padding: 0px 0px 0px 0px !important;
             }
         }
         .flickr-widget {
-            display: none;
-        }
+             width: 100%;
+            float: left;
+            color: #9b9b9b;
+            font-family: 'Allerta';
+            h5 {
+             margin: 0px;
+            }
+            img {
+                margin: 18px 0px 0px 0px;
+                width:75px;
+                height: 55px;
+            }
+        }   
     }
      hr {
             background-color: #1c1c1c;

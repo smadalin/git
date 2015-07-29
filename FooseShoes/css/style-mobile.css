@@ -397,7 +397,6 @@
     .footer .content .twitter-widget {
       width: 100%;
       height: 245px;
-      float: left;
       color: #9b9b9b;
       font-family: 'Allerta';
       margin-right: 30px;
@@ -411,7 +410,16 @@
       .footer .content .twitter-widget #twitterUser1, .footer .content .twitter-widget #twitterUser2 {
         color: #57c5a0; }
     .footer .content .flickr-widget {
-      display: none; }
+      width: 100%;
+      float: left;
+      color: #9b9b9b;
+      font-family: 'Allerta'; }
+      .footer .content .flickr-widget h5 {
+        margin: 0px; }
+      .footer .content .flickr-widget img {
+        margin: 18px 0px 0px 0px;
+        width: 75px;
+        height: 55px; }
   .footer hr {
     background-color: #1c1c1c;
     color: #1c1c1c;

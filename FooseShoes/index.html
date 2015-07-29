@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style-normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="(min-width: 320px) and (max-width: 767px)" href="css/style-mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1px) and (max-width: 767px)" href="css/style-mobile.css" >
     <link rel="stylesheet" type="text/css" media="(min-width: 768px) and (max-width: 959px)" href="css/style-medium.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
      <!--Slider-->
@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css">
     <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
     <!--Hamburger Menu-->
+    <link rel="stylesheet" type="text/css" href="css/pushy.css">
+    <script src="js/pushy.min.js"></script>
     <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet">
     <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
      <script src="js/scripts.js"></script>
@@ -30,6 +32,19 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
     <!--HTML for Header -->
     <div class="header">
         <div class="content clearfix">
@@ -43,6 +58,10 @@
     <!--HTML for Navigation Menu-->
     <div class="nav-menu">
         <div class="content clearfix">
+            <div id="container">
+                <!-- Menu Button -->
+                <div class="menu-btn"><i class="fa fa-bars fa-2x"></i></div>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Products</a></li>
