@@ -67,6 +67,39 @@ padding: 0px 0px 0px 0px !important;
             line-height: 50px;
             margin: 0;
         }
+        .tab-content {
+             margin: 30px 0px 40px 0px;
+        }
+        .modal-body {
+            background-color: #2e2e2e;
+            .nav-tabs {
+                li {
+                    a {
+                        color: #57c5a0;
+                    }
+                }
+            }
+        }
+        .form-group {
+            width: 60%;
+            margin: auto;
+            input {
+                display: block;
+            }
+            h4 {
+                color: #57c5a0;
+            }
+            .btn {
+                background-color: #57c5a0;
+                border: none;
+            }
+        }
+        .form-control {
+            float: left;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #383838;
+        }
     }
 }
 /*CSS for NavMenu,Whishlist and Cart------------------*/
@@ -556,17 +589,6 @@ padding: 0px 0px 0px 0px !important;
         }
     }
 }
-
-.modal-header {
-    background-color: #242424;
-}
-.modal-footer {
-    background-color: #242424
-}
-.btn-default {
-    background-color: #dfdbd4;
-}
-
 @media (min-width: 480px) and (max-width: 768px) {
     .products-list {
     background-color: #ebe7df;

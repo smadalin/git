@@ -12,6 +12,9 @@
     $( "#tags" ).autocomplete({
         source: availableTags
     });
+    $( "#tags2" ).autocomplete({
+        source: availableTags
+    });
     });
     //Newsletter Subscribe
     var subscribers=[];
