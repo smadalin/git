@@ -2,30 +2,23 @@
 <html lang="en">
 <head>
     <title>FooseShoes</title>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style-normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1px) and (max-width: 767px)" href="css/style-mobile.css" >
     <link rel="stylesheet" type="text/css" media="(min-width: 768px) and (max-width: 959px)" href="css/style-medium.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
      <!--Slider-->
-    <script src="js/jquery.flexslider.js"></script>
     <link rel="stylesheet" type="text/css" href="css/flexslider.css">
       <!--FancyBox-->
     <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/jquery.fancybox-buttons.css" type="text/css">
-    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
     <!--Hamburger Menu-->
     <link rel="stylesheet" type="text/css" href="css/pushy.css">
-    <script src="js/pushy.min.js"></script>
     <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet">
-    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
-     <script src="js/scripts.js"></script>
      <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!--Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
@@ -48,8 +41,8 @@
     <!--HTML for Header -->
     <div class="header">
         <div class="content clearfix">
-            <a href="index.html"><h2 class="logo">FOOSESHOES</h2></a>
-            <button type="button" class="login" data-toggle="modal" data-target="#myModal">LOGIN or REGISTER</button>
+            <h2 class="logo"><a href="index.html">fooseshoes</a></h2>
+            <button type="button" class="login" data-toggle="modal" data-target="#myModal"><span>login </span>or <span>register</span></button>
             <!-- Modal -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -63,7 +56,7 @@
                         <div role="tabpanel" class="tab-pane active" id="login">
                             <form role="form">
                                 <div class="form-group">
-                                    <h4>LOGIN</h4>
+                                    <h4>login</h4>
                                     <input type="email" class="form-control" placeholder="Email address" required="">
                                     <input type="password" class="form-control" placeholder="Password" required="">
                                     <button type="submit" class="btn btn-info" >Login</button>
@@ -73,7 +66,7 @@
                         <div role="tabpanel" class="tab-pane" id="register">
                             <form role="form">
                                 <div class="form-group">
-                                    <h4>REGISTER</h4>
+                                    <h4>register</h4>
                                     <input type="text" class="form-control" placeholder="First name" required="">
                                     <input type="text" class="form-control" placeholder="Last name" required="">
                                     <input type="email" class="form-control" placeholder="Email address" required="">
@@ -87,7 +80,7 @@
                 </div>
               </div>
             </div>
-            <input id="tags" type="text" placeholder="SEARCH">
+            <input id="tags" type="text" placeholder="SEARCH" />
             <a href="index.html"><i class="fa fa-search fa-lg"></i></a>
         </div>
     </div>
@@ -107,21 +100,21 @@
                 <li><a href="index.html">Contact</a></li>
             </ul>
             <!--Whishlist and Cart-->
-            <a href=""><div class="cart"><i class="fa fa-shopping-cart fa-lg"></i><span>0</span></div></a>
-            <a href=""><div class="whishlist"><i class="fa fa-star-o fa-lg" ></i><span>30</span></div></a>
+            <div class="cart"><i class="fa fa-shopping-cart fa-lg"></i><span>0</span></div>
+            <div class="whishlist"><i class="fa fa-star-o fa-lg" ></i><span>30</span></div>
         </div>
     </div>
 <!--HTML for cover-->
-        <div class="flexslider">
-              <ul class="slides">
-                    <li>
-                      <img src="img/slider-img1.jpg" alt="Slider Image 1">
+    <div class="flexslider">
+        <ul class="slides">
+             <li>
+                <img src="img/slider-img1.jpg" alt="Slider Image 1" />
                       <div class="content clearfix">
-                        <div class="details">
-                          <span>$145.99</span>
-                          <h1>Pink Shoes<br>
+                          <div class="details">
+                          <div class="price">$145.99</div>
+                          <h1>Pink Shoes<br />
                           2013 Collection</h1>
-                          <p>Nunc non fermentum nunc. Sed ut ante <br>eget leo tempor consequat sit amet eu orci. <br>Donec dignissim dolor eget..</p>
+                          <p>Nunc non fermentum nunc. Sed ut ante <br />eget leo tempor consequat sit amet eu orci. <br />Donec dignissim dolor eget..</p>
                           <a href="#"><i class="fa fa-eye fa-lg"></i></a>
                           <a href="#"><i class="fa fa-star-o fa-lg"></i></a>
                           <a href="#"><i class="fa fa-share-square-o fa-lg"></i></a>
@@ -130,13 +123,13 @@
                       </div>
                     </li>
                     <li>
-                      <img src="img/slider-img2.jpg" alt="Slider Image 2">
+                      <img src="img/slider-img2.jpg" alt="Slider Image 2" />
                       <div class="content clearfix">
                         <div class="details">
-                          <span>$145.99</span>
-                          <h1>Anna Field<br>
+                          <div class="price">$145.99</div>
+                          <h1>Anna Field<br />
                           2013 Collection</h1>
-                          <p>Nunc non fermentum nunc. Sed ut ante <br>eget leo tempor consequat sit amet eu orci. <br>Donec dignissim dolor eget..</p>
+                          <p>Nunc non fermentum nunc. Sed ut ante <br />eget leo tempor consequat sit amet eu orci. <br />Donec dignissim dolor eget..</p>
                           <a href="#"><i class="fa fa-eye fa-lg"></i></a>
                           <a href="#"><i class="fa fa-star-o fa-lg"></i></a>
                           <a href="#"><i class="fa fa-share-square-o fa-lg"></i></a>
@@ -145,13 +138,13 @@
                       </div>
                     </li>
                     <li>
-                      <img src="img/slider-img1.jpg" alt="Slider Image 3">
+                      <img src="img/slider-img1.jpg" alt="Slider Image 3" />
                       <div class="content clearfix">
                         <div class="details">
-                          <span>$145.99</span>
-                          <h1>Prada<br>
+                          <div class="price">$145.99</div>
+                          <h1>Prada<br />
                           2013 Collection</h1>
-                          <p>Nunc non fermentum nunc. Sed ut ante <br>eget leo tempor consequat sit amet eu orci. <br>Donec dignissim dolor eget..</p>
+                          <p>Nunc non fermentum nunc. Sed ut ante <br />eget leo tempor consequat sit amet eu orci. <br />Donec dignissim dolor eget..</p>
                           <a href="#"><i class="fa fa-eye fa-lg"></i></a>
                           <a href="#"><i class="fa fa-star-o fa-lg"></i></a>
                           <a href="#"><i class="fa fa-share-square-o fa-lg"></i></a>
@@ -187,13 +180,13 @@
     <div class="special-products">
         <div class="content clearfix">
             <div class="onsale">
-                <a href=""><div class="special-products-label">ON SALE</div></a>
+                <a href="#">on sale</a>
             </div>
             <div class="specialoffers">
-               <a href="#"><div class="special-products-label">SPECIAL OFFERS</div></a>
+               <a href="#">special offers</a>
             </div>
             <div class="musthave">
-                <a href=""><div class="special-products-label">MUST HAVE</div></a>
+                <a href="#">must have</a>
             </div>
         </div>
     </div>
@@ -201,12 +194,12 @@
     <div class="products-list">
         <div class="content clearfix">
             <h1>New arrivals on FooseShoes</h1>
-            <a href="#"><div class="show-all">Show All</div></a>
+            <button class="show-all">Show All</button>
             <div class="new-arrivals clearfix">
                 <div class="product">
-                    <img src="img/product.jpg" alt="Product Image">
-                    <a href="#"><div class="price">$145.99</div></a>
-                    <a href="#"><h4>Even&amp;Odd</h4></a>
+                    <img src="img/product.jpg" alt="Product Image" />
+                    <div class="price">$145.99</div>
+                    <h4><a href="#">Even&amp;Odd</a></h4>
                     <div class="action-menu">
                         <a href="#"><i class="fa fa-eye fa-lg"></i></a>
                         <a href="#"><i class="fa fa-star-o fa-lg"></i></a>
@@ -215,10 +208,10 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img src="img/product.jpg" alt="Product Image">
-                    <a href="#"><div class="price">$145.99</div></a>
-                    <a href="#"><h4>Even&amp;Odd</h4></a>
-                    <a href="#"><div class="on-sale">ON SALE</div></a>
+                    <img src="img/product.jpg" alt="Product Image" />
+                    <div class="price">$145.99</div>
+                    <h4><a href="#">Even&amp;Odd</a></h4>
+                    <div class="on-sale">on sale</div>
                     <div class="action-menu">
                         <a href="#"><i class="fa fa-eye fa-lg"></i></a>
                         <a href="#"><i class="fa fa-star-o fa-lg"></i></a>
@@ -227,9 +220,9 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img src="img/product.jpg" alt="Product Image">
-                    <a href="#"><div class="price">$145.99</div></a>
-                    <a href="#"><h4>Even&amp;Odd</h4></a>
+                    <img src="img/product.jpg" alt="Product Image" />
+                    <div class="price">$145.99</div>
+                    <h4><a href="#">Even&amp;Odd</a></h4>
                     <div class="action-menu">
                         <a href="#"><i class="fa fa-eye fa-lg"></i></a>
                         <a href="#"><i class="fa fa-star-o fa-lg"></i></a>
@@ -239,12 +232,12 @@
                 </div>
             </div>
             <h1>Best sellers of the month</h1>
-             <a href="#"><div class="show-all">Show All</div></a>
+             <button class="show-all">Show All</button>
              <div class="best-sellers clearfix">
                 <div class="product">
-                    <img src="img/product2.jpg" alt="Product Image">
-                    <a href="#"><div class="price">$145.99</div></a>
-                    <a href="#"><h4>Even&amp;Odd</h4></a>
+                    <img src="img/product2.jpg" alt="Product Image" />
+                    <div class="price">$145.99</div>
+                    <h4><a href="#">Even&amp;Odd</a></h4>
                     <div class="action-menu">
                         <a href="#"><i class="fa fa-eye fa-lg"></i></a>
                         <a href="#"><i class="fa fa-star-o fa-lg"></i></a>
@@ -253,9 +246,9 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img src="img/product2.jpg" alt="Product Image">
-                    <a href="#"><div class="price">$145.99</div></a>
-                    <a href="#"><h4>Even&amp;Odd</h4></a>
+                    <img src="img/product2.jpg" alt="Product Image" />
+                    <div class="price">$145.99</div>
+                    <h4><a href="#">Even&amp;Odd</a></h4>
                     <div class="action-menu">
                         <a href="#"><i class="fa fa-eye fa-lg"></i></a>
                         <a href="#"><i class="fa fa-star-o fa-lg"></i></a>
@@ -264,39 +257,39 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img src="img/product2.jpg" alt="Product Image">
-                    <a href="#"><div class="price">$145.99</div></a>
-                    <a href="#"><h4>Even&amp;Odd</h4></a>
+                    <img src="img/product2.jpg" alt="Product Image" />
+                    <div class="price">$145.99</div>
+                    <h4><a href="#">Even&amp;Odd</a></h4>
                     <div class="action-menu">
                         <a href="#"><i class="fa fa-eye fa-lg"></i></a>
                         <a href="#"><i class="fa fa-star-o fa-lg"></i></a>
                         <a href="#"><i class="fa fa-share-square-o fa-lg"></i></a>
                         <a href="#"><i class="fa fa-shopping-cart fa-lg"></i></a>
                     </div>
-                    <a href="#"><div class="out-of-stock">OUT OF STOCK</div></a>
+                    <div class="out-of-stock">out of stock</div>
                 </div>
             </div>
             <hr>
             <div class="pre-footer clearfix">
                 <div class="free-shipping">
-                    <h4>FREE SHIPPING</h4>
+                    <h4>free shipping</h4>
                     <p>Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, </p>
                 </div>
                 <div class="testimonials">
-                    <h4>TESTIMONIALS</h4>
-                    <p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit [...] <br>- John Doe -</p>
+                    <h4>testimonials</h4>
+                    <p>vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit [...] <br /><span>- John Doe -</span></p>
                 </div>
                 <div class="blog clearfix">
-                    <h4>BLOG NEWS</h4>
+                    <h4>blog news</h4>
                     <div class="post-details clearfix">
-                        <span id="postDate1"></span>
-                        <span id="postTitle1"></span><br>
-                        <span id="postMessage1"></span>
+                        <p id="postDate1"></p>
+                        <p id="postTitle1"></p><br />
+                        <p id="postMessage1"></p>
                     </div>
                      <div class="post-details clearfix">
-                        <span id="postDate2"></span>
-                        <span id="postTitle2"></span><br>
-                        <span id="postMessage2"></span>
+                        <p id="postDate2"></p>
+                        <p id="postTitle2"></p><br />
+                        <p id="postMessage2"></p>
                     </div>
                 </div>
             </div>
@@ -306,24 +299,24 @@
     <div class="footer">
         <div class="content clearfix">
             <div class="text-widget">
-                <h5>TEXT WIDGET</h5>
+                <h5>text widget</h5>
                 <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             </div>
             <div class="twitter-widget">
-                <h5>TWITTER WIDGET</h5>
+                <h5>twitter widget</h5>
                 <div class="message-box">
-                    <span id="twitterUser1"></span>
-                    <span id="twitterMessage1"></span><br>
-                    <span id="twitterDate1"></span>
-                    </div>
+                    <p id="twitterUser1"></p>
+                    <p id="twitterMessage1"></p>
+                    <p id="twitterDate1"></p>
+                </div>
                 <div class="message-box">
-                    <span id="twitterUser2"></span>
-                    <span id="twitterMessage2"></span><br>
-                    <span id="twitterDate2"></span>
+                    <p id="twitterUser2"></p>
+                    <p id="twitterMessage2"></p>
+                    <p id="twitterDate2"></p>
                 </div>
             </div>
             <div class="flickr-widget">
-                <h5>FLICKR WIDGET</h5>
+                <h5>flickr widget</h5>
                 <a class="fancybox" href="img/flickr1.jpg"><img src="img/flickr1.jpg" alt="" /></a>
                 <a class="fancybox" href="img/flickr2.jpg"><img src="img/flickr2.jpg" alt="" /></a>
                 <a class="fancybox" href="img/flickr3.jpg"><img src="img/flickr3.jpg" alt="" /></a>
@@ -332,35 +325,42 @@
                 <a class="fancybox" href="img/flickr6.jpg"><img src="img/flickr6.jpg" alt="" /></a>
             </div>
         </div>
-        <hr>
+        <hr />
         <div class="social-media clearfix">
             <div class="newsletter clearfix">
                 <form name ="subscribe" id="subscribe_frm" action="#">
                     <input type="email" placeholder="Enter email for newsletter" id="subscribe_email">
-                    <button type="submit" onclick="subscribe_newsletter()"><i class="fa fa-sign-in"></i></button>
+                    <button type="submit" id="subscribeButton"><i class="fa fa-sign-in"></i></button>
                 </form>
             </div>
             <div class="social-buttons clearfix">
-                <a href="#"><div class="social-logo"><img src="img/facebook.png" alt="Facebook"></div></a>
-                <a href="#"><div class="social-logo"><img src="img/twitter.png" alt="Twitter"></div></a>
-                <a href="#"><div class="social-logo"><img src="img/google+.png" alt="Goolge"></div></a>
-                <a href="#"><div class="social-logo"><img src="img/linkedln.png" alt="Linkedln"></div></a>
-                <a href="#"><div class="social-logo"><img src="img/other.png" alt="other"></div></a>
+                <div class="social-logo"><img src="img/facebook.png" alt="Facebook" /></div>
+                <div class="social-logo"><img src="img/twitter.png" alt="Twitter" /></div>
+                <div class="social-logo"><img src="img/google+.png" alt="Goolge" /></div>
+                <div class="social-logo"><img src="img/linkedln.png" alt="Linkedln" /></div>
+                <div class="social-logo"><img src="img/other.png" alt="other" /></div>
             </div>
         </div>
     </div>
     <!--HTML  for after-footer-->
     <div class="after-footer">
         <div class="content clearfix">
-            <p>Copyright © Fooseshoes 2013. <br>Designed by EnzoLiVolti. </p>
+            <p>Copyright © Fooseshoes 2013. <br />Designed by EnzoLiVolti. </p>
             <ul>
-               <li><a href="#">Home</a></li>
-               <li> <a href="#"> / Support</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#"> / Support</a></li>
                 <li><a href="#"> / Terms and Conditions</a></li>
                 <li><a href="#"> / Faqs</a></li>
                 <li><a href="#"> / Contact us</a></li>
             </ul>
         </div>
     </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/pushy.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>

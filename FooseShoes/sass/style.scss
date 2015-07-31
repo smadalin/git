@@ -45,9 +45,13 @@ padding: 0px 0px 0px 0px !important;
         .logo {
             float: left;
             margin: 0px;
-            color: #57c5a0;
-            line-height: 50px;
-            font-family: 'Open Sans';
+            a {
+                color: #57c5a0;
+                line-height: 50px;
+                font-family: 'Open Sans';
+                text-decoration: none;
+                text-transform: uppercase;
+            }
         }
         input {
             float: right;
@@ -60,6 +64,7 @@ padding: 0px 0px 0px 0px !important;
             text-indent: 22px;
             border-left: 1px solid #383838;
             @include placeholder-color(#6b6b6b);
+            font-size: 11px;
         }
         .fa-search{
             color: #6b6b6b;
@@ -69,7 +74,7 @@ padding: 0px 0px 0px 0px !important;
         .login {
             float: right;
             color: #6b6b6b;
-            font-size: 12px;
+            font-size: 11px;
             padding: 0px 22px 0px 22px;
             border-top: none;
             border-right:1px solid #383838;
@@ -78,6 +83,9 @@ padding: 0px 0px 0px 0px !important;
             line-height: 50px;
             margin: 0px;
             background-color: #242424;
+            span {
+                text-transform: uppercase;
+            }
         }
         .tab-content {
              margin: 30px 0px 40px 0px;
@@ -85,6 +93,11 @@ padding: 0px 0px 0px 0px !important;
         .modal-body {
             background-color: #2e2e2e;
             .nav-tabs {
+                border-bottom: 1px solid #6B6B6B;
+                .active a{
+                    background-color: #6B6B6B;
+                    border: 1px solid #6B6B6B;
+                }
                 li {
                     a {
                         color: #57c5a0;
@@ -97,9 +110,11 @@ padding: 0px 0px 0px 0px !important;
             margin: auto;
             h4 {
                 color: #57c5a0;
+                text-transform: uppercase;
             }
             .btn {
-                background-color: #57c5a0;
+                background-color: #6B6B6B;
+                color: #57c5a0;
                 border: none;
             }
         }
@@ -148,6 +163,7 @@ padding: 0px 0px 0px 0px !important;
             height: 60px;
             border-left: 1px solid #EEEEEE;
             border-right: 1px solid #EEEEEE;
+            cursor: pointer;
             &:hover span {
                 background-color: #57c5a0;
             }
@@ -158,7 +174,7 @@ padding: 0px 0px 0px 0px !important;
                 margin-left: 25px;
                 color: #000;
             }
-            span{
+            span {
               background-color: #adadad;
               color: #FFF;
               border-radius: 5px;
@@ -178,6 +194,7 @@ padding: 0px 0px 0px 0px !important;
             width: 105px;
             height: 60px;
             border-left: 1px solid #EEEEEE;
+            cursor: pointer;
             &:hover span {
                 background-color: #57c5a0;
             }
@@ -217,8 +234,7 @@ padding: 0px 0px 0px 0px !important;
       .details {
         width: 440px;
         float: right;
-        span {
-        display: block;
+        .price {
         width: 70px;
         height: 70px;
         color: #FFF;
@@ -316,7 +332,8 @@ padding: 0px 0px 0px 0px !important;
             float: left;
             margin: 25px 0px 0px 20px;
         }
-        .special-products-label {
+        a {
+            display: block;
             width: 180px;
             height: 60px;
             background-color: rgba(0,0,0,0.85);
@@ -326,6 +343,7 @@ padding: 0px 0px 0px 0px !important;
             text-align: center;
             line-height: 60px;
             font-size: 20px;
+            text-transform: uppercase;
         }
     }
     a:hover {
@@ -362,9 +380,13 @@ padding: 0px 0px 0px 0px !important;
               color: #bcb5a7;
               margin-top: 25px;
               font-family: 'Allerta';
+              background-color: #ebe7df;
+              a {
+                text-decoration: none;
+                color: #bcb5a7;
+              }
               &:hover{
-                color: black;
-                background-color: #B2AFAB;
+                background-color: #E0DCD4;
               }
         }
         .new-arrivals {
@@ -377,6 +399,8 @@ padding: 0px 0px 0px 0px !important;
             background-color: #FFF;
             margin-right: 20px;
             position: relative;
+            font-family: 'Open Sans';
+            cursor: pointer;
             &:hover .action-menu{
             display: block;
             }
@@ -397,17 +421,18 @@ padding: 0px 0px 0px 0px !important;
                 background-color: #57c5a0;
                 margin-left: 10px;
                 text-align: center;
-                font-family: 'Open Sans';
                 margin-top: -19px;
                 float: left;
                 position: absolute;
              }
              h4 {
+                a {
                 margin-left: 100px;
                 line-height: 30px;
                 color: #000;
                 float: left;
                 display: block;
+                }
              }
              .on-sale {
                 height: 68px;
@@ -421,6 +446,7 @@ padding: 0px 0px 0px 0px !important;
                 position: absolute;
                 top: 0px;
                 right: 10px;
+                text-transform: uppercase;
              }
              .action-menu {
                 width: 220px;
@@ -448,6 +474,7 @@ padding: 0px 0px 0px 0px !important;
             background-color: #FFF;
             margin-right: 20px;
             position: relative;
+            cursor: pointer;
             &:hover .action-menu{
             display: block;
             }
@@ -474,11 +501,13 @@ padding: 0px 0px 0px 0px !important;
                 position: absolute;
              }
              h4 {
+                a {
                 margin-left: 100px;
                 line-height: 30px;
                 color: #000;
                 float: left;
                 display: block;
+                }
              }
              .out-of-stock {
                  height: 68px;
@@ -496,6 +525,7 @@ padding: 0px 0px 0px 0px !important;
                 justify-content:center;
                 align-items:center;
                 line-height: 20px;
+                text-transform: uppercase;
              }
              .action-menu {
                 width: 220px;
@@ -524,6 +554,9 @@ padding: 0px 0px 0px 0px !important;
                 font-family: 'Allerta';
                  font-size: 12px;
                  padding: 10px 20px 10px 20px;
+                 h4 {
+                    text-transform: uppercase;
+                 }
             }
             .testimonials {
                 width: 220px;
@@ -534,6 +567,12 @@ padding: 0px 0px 0px 0px !important;
                 font-family: 'Allerta';
                 font-size: 12px;
                 padding: 10px 20px 10px 20px;
+                h4 {
+                    text-transform: uppercase;
+                }
+                span {
+                    font-style: italic;
+                }
             }
             .blog {
                 width: 460px;
@@ -544,11 +583,16 @@ padding: 0px 0px 0px 0px !important;
                 font-family: 'Allerta';
                  font-size: 12px;
                 padding: 10px 20px 10px 20px;
+                h4 {
+                    text-transform: uppercase;
+                }
                 .post-details{
                     cursor: pointer;
                      #postDate1 , #postDate2 {
-                    height: 40px;
-                    width: 40px;
+                    display: block;
+                    height: 35px;
+                    width: 35px;
+                    color: #FFF;
                     background-color: #57c5a0;
                     text-align: center;
                     font-family: 'Allerta';
@@ -567,11 +611,6 @@ padding: 0px 0px 0px 0px !important;
                         margin-left: 10px;
                         float: left;
                     }
-                }
-                p {
-                    margin: 20px 0px 0px 55px;
-                    font-size: 10px;
-                    color: #000;
                 }
             }
         }
@@ -592,8 +631,11 @@ padding: 0px 0px 0px 0px !important;
             color: #9b9b9b;
             font-family: 'Allerta';
             cursor: pointer;
+            font-style: italic;
             h5 {
                 margin: 50px 0px 0px 0px;
+                text-transform: uppercase;
+                font-style: normal;
             }
             p {
                 margin: 23px 0px 0px 0px;
@@ -607,17 +649,24 @@ padding: 0px 0px 0px 0px !important;
             color: #9b9b9b;
             font-family: 'Allerta';
             margin-right: 55px;
-            line-height: 15px;
+            font-style: italic;
             h5 {
                 margin: 50px 0px 0px 0px;
+                text-transform: uppercase;
+                font-style: normal;
             }
             .message-box{
                 font-size: 11px;
                 margin-top: 15px;
                 cursor: pointer;
             }
-            #twitterUser1 , #twitterUser2{
+            #twitterUser1 , #twitterUser2 {
                 color: #57c5a0;
+                float: left;
+            }
+            p {
+                margin: 0px 5px 0px 0px;
+                font-size: 11px;
             }
         }
         .flickr-widget {
@@ -627,6 +676,7 @@ padding: 0px 0px 0px 0px !important;
             font-family: 'Allerta';
             h5 {
              margin: 50px 0px 0px 0px;
+             text-transform: uppercase;
             }
             img {
                 margin: 18px 5px 0px 0px;
@@ -676,6 +726,7 @@ padding: 0px 0px 0px 0px !important;
             .social-buttons {
                 margin-top: 36px;
                 float: right;
+                cursor: pointer;
                 .social-logo {
                     width: 36px;
                     height: 36px;
@@ -710,6 +761,7 @@ padding: 0px 0px 0px 0px !important;
         li {
             display: inline-block;
             margin-top: 30px;
+            font-size: 12px;
         }
         a {
             color: #7d7d7d;

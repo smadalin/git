@@ -17,8 +17,8 @@
     });
     });
     //Newsletter Subscribe
-    var subscribers=[];
-    function subscribe_newsletter(){
+    document.getElementById("subscribeButton").onclick = function() {
+        var subscribers=[];
         var x=document.getElementById('subscribe_email').value;
         var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         if (!filter.test(x)) {
@@ -30,7 +30,7 @@
         subscribers.push(temp);
         document.getElementById("subscribe_email").value="";
         console.log(subscribers);
-    }
+    };
     //Blog News Widget
     $.getJSON("widgets_data.json", function (data){
         var count1=0;
