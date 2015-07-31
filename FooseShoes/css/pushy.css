@@ -31,8 +31,8 @@
 }
 
 .pushy a:hover{
-    background: #00b4ff;
     color: #FFF;
+    text-decoration: none;
 }
 
 /* Menu Movement */

@@ -17,8 +17,8 @@
     });
     });
     //Newsletter Subscribe
+    var subscribers=[];
     document.getElementById("subscribeButton").onclick = function() {
-        var subscribers=[];
         var x=document.getElementById('subscribe_email').value;
         var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         if (!filter.test(x)) {

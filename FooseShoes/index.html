@@ -5,10 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style-normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1px) and (max-width: 767px)" href="css/style-mobile.css" >
-    <link rel="stylesheet" type="text/css" media="(min-width: 768px) and (max-width: 959px)" href="css/style-medium.css">
      <!--Slider-->
     <link rel="stylesheet" type="text/css" href="css/flexslider.css">
       <!--FancyBox-->
@@ -42,7 +39,7 @@
     <div class="header">
         <div class="content clearfix">
             <h2 class="logo"><a href="index.html">fooseshoes</a></h2>
-            <button type="button" class="login" data-toggle="modal" data-target="#myModal"><span>login </span>or <span>register</span></button>
+            <a class="login" data-toggle="modal" data-target="#myModal"><span>login </span>or <span>register</span></a>
             <!-- Modal -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
@@ -57,8 +54,8 @@
                             <form role="form">
                                 <div class="form-group">
                                     <h4>login</h4>
-                                    <input type="email" class="form-control" placeholder="Email address" required="">
-                                    <input type="password" class="form-control" placeholder="Password" required="">
+                                    <input type="email" class="form-control" placeholder="Email address" required>
+                                    <input type="password" class="form-control" placeholder="Password" required>
                                     <button type="submit" class="btn btn-info" >Login</button>
                                 </div>
                             </form>
@@ -110,7 +107,7 @@
              <li>
                 <img src="img/slider-img1.jpg" alt="Slider Image 1" />
                       <div class="content clearfix">
-                          <div class="details">
+                        <div class="details">
                           <div class="price">$145.99</div>
                           <h1>Pink Shoes<br />
                           2013 Collection</h1>
@@ -330,7 +327,7 @@
             <div class="newsletter clearfix">
                 <form name ="subscribe" id="subscribe_frm" action="#">
                     <input type="email" placeholder="Enter email for newsletter" id="subscribe_email">
-                    <button type="submit" id="subscribeButton"><i class="fa fa-sign-in"></i></button>
+                    <button id="subscribeButton"><i class="fa fa-sign-in"></i></button>
                 </form>
             </div>
             <div class="social-buttons clearfix">
